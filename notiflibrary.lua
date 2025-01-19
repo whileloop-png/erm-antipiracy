@@ -10,10 +10,10 @@ function WindowsError.new(warningText, errorMessage)
 
     local offset            = #activeErrors * stackOffset
     local position          = UDim2.new(
-                            originalPosition.X.Scale,
-                            originalPosition.X.Offset + offset.X,
-                            originalPosition.Y.Scale,
-                            originalPosition.Y.Offset + offset.Y
+                                        originalPos.X.Scale,
+                                        originalPos.X.Offset + offset.X,
+                                        originalPos.Y.Scale,
+                                        originalPos.Y.Offset + offset.Y
                             )
     local response = request({
         Url = "https://raw.githubusercontent.com/whileloop-png/proj/main/youtube_RCkUxdRSuEk_audio.mp3",
